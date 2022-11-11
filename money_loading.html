@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>check money</title>
+</head>
+
+<body class="bg-gray-900">
+
+    <div class="container mx-auto">
+        <h1 class="bg-gray-800 text-gray-100 text-center p-2 rounded-lg font-serif text-xl">Money Withdraw</h1>
+        <div id="successmsg" class="mt-5 p-2"></div>
+        <div id="errormsg" class="bg-red-500 text-red-900 p-2 text-center font-bold hidden">Plaese Enter The Amount !
+        </div>
+
+        <div class="flex justify-center items-center mt-10">
+            <input type="text" name="amount" id="amount" placeholder="Enter amount"
+                class="p-1 w-[300px] bg-gray-700 rounded-lg focus:outline-none ">
+        </div>
+        <div class="">
+            <table class="bg-gray-700 text-white mx-auto mt-10 rounded-lg border border-white ">
+                <tr class="text-center bg-gray-800 border-b border-white">
+                    <th class="px-7 border border-white">2000</th>
+                    <th class="px-7 border border-white">500</th>
+                    <th class="px-7 border border-white">200</th>
+                    <th class="px-7 border border-white">100</th>
+                    <th class="px-7 border border-white">50</th>
+                    <th class="px-7 border border-white">20</th>
+                    <th class="px-7 border border-white">10</th>
+                </tr>
+                <tr class="text-center ">
+                    <td id="first" class="px-7 border border-white" value="0">0</td>
+                    <td id="second" class="px-7 border border-white" value="0">0</td>
+                    <td id="third" class="px-7 border border-white" value="0">0</td>
+                    <td id="four" class="px-7 border border-white" value="0">0</td>
+                    <td id="fifth" class="px-7 border border-white" value="0">0</td>
+                    <td id="six" class="px-7 border border-white" value="0">0</td>
+                    <td id="seven" class="px-7 border border-white" value="0">0</td>
+                </tr>
+            </table>
+        </div>
+        <div id="content"
+            class="flex-col  items-center mx-auto mt-5 w-[300px] h-[300px] overflow-auto bg-gray-800 border-2 border-whites">
+            <!-- <img class="mx-auto" src="./rs2000.jpg" alt="100rs" width="200px"> -->
+
+        </div>
+
+        <div id="btn" class="flex justify-center items-center mt-10">
+            <button
+                class=" bg-transparent border-2 border-green-700 text-green-900 font-serif font-bold p-2 w-[300px] rounded-lg hover:bg-green-600 transition ease-in hover:ease-in-out">Withdraw</button>
+        </div>
+    </div>
+    <script src="money_loading.js"></script>
+
+</body>
+
+</html>
