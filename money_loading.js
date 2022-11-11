@@ -11,6 +11,7 @@ const btn = document.getElementById("btn")
 const successmsg = document.getElementById("successmsg")
 const errormsg = document.getElementById("errormsg")
 
+
 inputval.addEventListener("input", function () {
     first.innerText = 0;
     second.innerText = 0;
